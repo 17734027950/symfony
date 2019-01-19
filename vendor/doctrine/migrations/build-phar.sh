@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 
-set -euf -o pipefail
+git fetch origin master --tags
 
-./download-box.sh
+if [ -f composer.lock ]; then
+  rm composer.lock
+fi
 
-function restorePlatform {
-    composer config --unset platform
-    mv -f composer.lock.back composer.lock || true
-}
+composer install --no-dev --optimize-autoloader
 
-# lock PHP to minimum allowed version
-composer config platform.php 7.1.0
-cp composer.lock composer.lock.back || true
-composer update
+mkdir -p build
 
-php box.phar compile -vv
+if [ ! -f box.phar ]; then
+    wget https://github.com/box-project/box2/releases/download/2.6.0/box-2.6.0.phar -O box.phar
+fi
 
-trap restorePlatform exit
+php box.phar build -vv

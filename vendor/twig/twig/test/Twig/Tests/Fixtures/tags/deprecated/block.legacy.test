@@ -15,6 +15,6 @@ Deprecating a block with "deprecated" tag
 Hello Fabien
 {% endblock %}
 --DATA--
-return []
+return array()
 --EXPECT--
   Hello Fabien

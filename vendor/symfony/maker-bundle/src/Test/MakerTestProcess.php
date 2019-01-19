@@ -24,9 +24,7 @@ final class MakerTestProcess
 
     private function __construct($commandLine, $cwd, $timeout)
     {
-        $this->process = method_exists(Process::class, 'fromShellCommandline')
-            ? Process::fromShellCommandline($commandLine, $cwd, null, null, $timeout)
-            : new Process($commandLine, $cwd, null, null, $timeout);
+        $this->process = new Process($commandLine, $cwd, null, null, $timeout);
         $this->process->inheritEnvironmentVariables();
     }
 

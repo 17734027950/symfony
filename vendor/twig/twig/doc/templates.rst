@@ -550,12 +550,11 @@ even if you're not working with PHP you should feel comfortable with it.
 
 .. note::
 
-    The operator precedence is as follows, with the lowest-precedence operators
-    listed first: ``?:`` (ternary operator), ``b-and``, ``b-xor``, ``b-or``,
-    ``or``, ``and``, ``==``, ``!=``, ``<``, ``>``, ``>=``, ``<=``, ``in``,
-    ``matches``, ``starts with``, ``ends with``, ``..``, ``+``, ``-``, ``~``,
-    ``*``, ``/``, ``//``, ``%``, ``is`` (tests), ``**``, ``??``, ``|``
-    (filters), ``[]``, and ``.``.
+    The operator precedence is as follows, with the lowest-precedence
+    operators listed first: ``b-and``, ``b-xor``, ``b-or``, ``or``, ``and``,
+    ``==``, ``!=``, ``<``, ``>``, ``>=``, ``<=``, ``in``, ``matches``,
+    ``starts with``, ``ends with``, ``..``, ``+``, ``-``, ``~``, ``*``, ``/``,
+    ``//``, ``%``, ``is``, ``**``, ``|``, ``[]``, and ``.``:
 
     .. code-block:: jinja
 

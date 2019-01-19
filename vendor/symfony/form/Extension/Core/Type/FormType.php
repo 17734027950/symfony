@@ -90,6 +90,7 @@ class FormType extends BaseType
             'size' => null,
             'label_attr' => $options['label_attr'],
             'help' => $options['help'],
+            'help_attr' => $options['help_attr'],
             'compound' => $formConfig->getCompound(),
             'method' => $formConfig->getMethod(),
             'action' => $formConfig->getAction(),
@@ -181,11 +182,13 @@ class FormType extends BaseType
             'upload_max_size_message' => $uploadMaxSizeMessage, // internal
             'allow_file_upload' => false,
             'help' => null,
+            'help_attr' => array(),
         ));
 
         $resolver->setAllowedTypes('label_attr', 'array');
         $resolver->setAllowedTypes('upload_max_size_message', array('callable'));
         $resolver->setAllowedTypes('help', array('string', 'null'));
+        $resolver->setAllowedTypes('help_attr', 'array');
     }
 
     /**

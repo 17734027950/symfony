@@ -1,20 +1,13 @@
-# Upgrade to 2.0
+UPGRADE TO 1.8
+==============
 
-## BC Break: Moved `Doctrine\DBAL\Migrations` to `Doctrine\Migrations`
+## AbstractMigration
 
-Your migration classes that previously used to extend `Doctrine\DBAL\Migrations\AbstractMigration` now need to extend
-`Doctrine\Migrations\AbstractMigration` instead. The `Doctrine\DBAL\Migrations\AbstractMigration` class will be
-deprecated in the `1.8.0` release to prepare for the BC break.
+The `Doctrine\DBAL\Migrations\AbstractMigration` class has been deprecated and replaced with
+`Doctrine\Migrations\AbstractMigration`. It will be removed in 2.0 so please update to use the class in the new namespace.
 
-## BC Break: Removed `Doctrine\DBAL\Migrations\MigrationsVersion`
-
-The `Doctrine\DBAL\Migrations\MigrationsVersion` class is no longer available: please refrain from checking the Migrations version at runtime.
-
-## BC Break: Moved `Doctrine\Migrations\Migration` to `Doctrine\Migrations\Migrator`
-
-To make the name more clear and to differentiate from the `AbstractMigration` class, `Migration` was renamed to `Migrator`.
-
-# Upgrade from 1.0-alpha1 to 1.0.0-alpha3
+UPGRADE FROM 1.0-alpha1 to 1.0.0-alpha3
+=======================================
 
 ## AbstractMigration
 

@@ -35,7 +35,7 @@ class AutoloaderUtil
      *
      * @param string $className
      *
-     * @return string|null
+     * @return null|string
      *
      * @throws \Exception
      */
