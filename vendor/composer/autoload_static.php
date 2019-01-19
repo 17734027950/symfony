@@ -115,7 +115,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
             'Doctrine\\ORM\\' => 13,
             'Doctrine\\Migrations\\' => 20,
             'Doctrine\\Instantiator\\' => 22,
-            'Doctrine\\DBAL\\Migrations\\' => 25,
             'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
@@ -414,10 +413,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
-        ),
-        'Doctrine\\DBAL\\Migrations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/migrations/lib/Doctrine/DBAL/Migrations',
         ),
         'Doctrine\\DBAL\\' => 
         array (
