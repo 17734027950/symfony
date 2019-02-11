@@ -120,7 +120,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
             'Doctrine\\ORM\\' => 13,
             'Doctrine\\Migrations\\' => 20,
             'Doctrine\\Instantiator\\' => 22,
-            'Doctrine\\DBAL\\Migrations\\' => 25,
             'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
@@ -141,8 +140,8 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Zend\\EventManager\\' => 
         array (
@@ -440,10 +439,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
-        'Doctrine\\DBAL\\Migrations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/migrations/lib/Doctrine/DBAL/Migrations',
-        ),
         'Doctrine\\DBAL\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/lib/Doctrine/DBAL',
@@ -462,10 +457,10 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
             1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
-            3 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+            3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
