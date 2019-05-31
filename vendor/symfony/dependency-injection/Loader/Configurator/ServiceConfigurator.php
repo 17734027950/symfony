@@ -45,12 +45,14 @@ class ServiceConfigurator extends AbstractServiceConfigurator
     private $container;
     private $instanceof;
     private $allowParent;
+    private $path;
 
-    public function __construct(ContainerBuilder $container, array $instanceof, bool $allowParent, ServicesConfigurator $parent, Definition $definition, $id, array $defaultTags)
+    public function __construct(ContainerBuilder $container, array $instanceof, bool $allowParent, ServicesConfigurator $parent, Definition $definition, $id, array $defaultTags, string $path = null)
     {
         $this->container = $container;
         $this->instanceof = $instanceof;
         $this->allowParent = $allowParent;
+        $this->path = $path;
 
         parent::__construct($parent, $definition, $id, $defaultTags);
     }
@@ -59,7 +61,7 @@ class ServiceConfigurator extends AbstractServiceConfigurator
     {
         parent::__destruct();
 
-        $this->container->addRemovedBindingIds($this->id);
+        $this->container->removeBindings($this->id);
 
         if (!$this->definition instanceof ChildDefinition) {
             $this->container->setDefinition($this->id, $this->definition->setInstanceofConditionals($this->instanceof));

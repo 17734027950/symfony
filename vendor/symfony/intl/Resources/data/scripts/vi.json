@@ -1,5 +1,5 @@
 {
-    "Version": "2.1.48.42",
+    "Version": "2.1.49.82",
     "Names": {
         "Adlm": "Adlm",
         "Afak": "Chữ Afaka",
@@ -189,7 +189,6 @@
         "Zsye": "Biểu tượng",
         "Zsym": "Ký hiệu",
         "Zxxx": "Chưa có chữ viết",
-        "Zyyy": "Chung",
-        "Zzzz": "Chữ viết không xác định"
+        "Zyyy": "Chung"
     }
 }
