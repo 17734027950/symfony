@@ -8,11 +8,11 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
@@ -57,7 +57,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
             'Symfony\\Component\\PropertyInfo\\' => 31,
             'Symfony\\Component\\PropertyAccess\\' => 33,
             'Symfony\\Component\\Process\\' => 26,
-            'Symfony\\Component\\Panther\\' => 26,
             'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Intl\\' => 23,
             'Symfony\\Component\\Inflector\\' => 28,
@@ -95,7 +94,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         ),
         'P' => 
         array (
-            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Link\\' => 9,
             'Psr\\Container\\' => 14,
@@ -110,7 +108,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         'F' => 
         array (
             'Fig\\Link\\' => 9,
-            'Facebook\\WebDriver\\' => 19,
         ),
         'E' => 
         array (
@@ -123,6 +120,7 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
             'Doctrine\\Migrations\\' => 20,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\DBAL\\' => 14,
+            'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
@@ -245,10 +243,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         'Symfony\\Component\\Process\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
-        ),
-        'Symfony\\Component\\Panther\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/panther/src',
         ),
         'Symfony\\Component\\OptionsResolver\\' => 
         array (
@@ -386,10 +380,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         array (
             0 => __DIR__ . '/..' . '/sensio/framework-extra-bundle',
         ),
-        'Psr\\SimpleCache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
-        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -422,10 +412,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
-        'Facebook\\WebDriver\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/facebook/webdriver/lib',
-        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
@@ -449,6 +435,10 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
         'Doctrine\\DBAL\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/lib/Doctrine/DBAL',
+        ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
@@ -508,13 +498,6 @@ class ComposerStaticInitd1902af3d6f5e175c078303b8ed0a144
             'ProxyManager\\' => 
             array (
                 0 => __DIR__ . '/..' . '/ocramius/proxy-manager/src',
-            ),
-        ),
-        'D' => 
-        array (
-            'Doctrine\\Common\\Lexer\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
             ),
         ),
     );

@@ -145,6 +145,7 @@ EOF
         $options['show_hidden'] = $input->getOption('show-hidden');
         $options['raw_text'] = $input->getOption('raw');
         $options['output'] = $io;
+        $options['is_debug'] = $this->getApplication()->getKernel()->isDebug();
 
         try {
             $helper->describe($io, $object, $options);
@@ -220,6 +221,8 @@ EOF
 
     private function findProperServiceName(InputInterface $input, SymfonyStyle $io, ContainerBuilder $builder, string $name, bool $showHidden)
     {
+        $name = ltrim($name, '\\');
+
         if ($builder->has($name) || !$input->isInteractive()) {
             return $name;
         }

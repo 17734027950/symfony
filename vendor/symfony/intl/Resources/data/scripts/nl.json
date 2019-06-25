@@ -1,5 +1,5 @@
 {
-    "Version": "2.1.48.86",
+    "Version": "2.1.49.82",
     "Names": {
         "Adlm": "Adlam",
         "Afak": "Defaka",
@@ -185,7 +185,6 @@
         "Zsye": "emoji",
         "Zsym": "Symbolen",
         "Zxxx": "ongeschreven",
-        "Zyyy": "algemeen",
-        "Zzzz": "onbekend schriftsysteem"
+        "Zyyy": "algemeen"
     }
 }
