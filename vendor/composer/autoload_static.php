@@ -40,6 +40,7 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
             'Symfony\\Flex\\' => 13,
+            'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\WebLink\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
@@ -52,7 +53,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
             'Symfony\\Component\\PropertyInfo\\' => 31,
             'Symfony\\Component\\PropertyAccess\\' => 33,
             'Symfony\\Component\\Process\\' => 26,
-            'Symfony\\Component\\Panther\\' => 26,
             'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Intl\\' => 23,
             'Symfony\\Component\\Inflector\\' => 28,
@@ -105,7 +105,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
         'F' => 
         array (
             'Fig\\Link\\' => 9,
-            'Facebook\\WebDriver\\' => 19,
         ),
         'E' => 
         array (
@@ -118,6 +117,7 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
             'Doctrine\\Migrations\\' => 20,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\DBAL\\' => 14,
+            'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
@@ -173,6 +173,10 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
         array (
             0 => __DIR__ . '/..' . '/symfony/flex/src',
         ),
+        'Symfony\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/contracts',
+        ),
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
@@ -220,10 +224,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
         'Symfony\\Component\\Process\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
-        ),
-        'Symfony\\Component\\Panther\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/panther/src',
         ),
         'Symfony\\Component\\OptionsResolver\\' => 
         array (
@@ -397,10 +397,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
-        'Facebook\\WebDriver\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/facebook/webdriver/lib',
-        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
@@ -424,6 +420,10 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
         'Doctrine\\DBAL\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/lib/Doctrine/DBAL',
+        ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
@@ -483,13 +483,6 @@ class ComposerStaticInitdb3f2dc3281dacba8cacc2398c7fc977
             'ProxyManager\\' => 
             array (
                 0 => __DIR__ . '/..' . '/ocramius/proxy-manager/src',
-            ),
-        ),
-        'D' => 
-        array (
-            'Doctrine\\Common\\Lexer\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
             ),
         ),
     );
